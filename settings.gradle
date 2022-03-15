@@ -1,0 +1,7 @@
+include ':api'
+include ':util'
+include ':microservices:product-service'
+include ':microservices:user-composite-service'
+include ':microservices:user-service'
+
+

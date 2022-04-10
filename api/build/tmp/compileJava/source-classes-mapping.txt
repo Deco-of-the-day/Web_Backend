@@ -1,8 +1,8 @@
-com/dotd/api/core/user/UserService.java
- com.dotd.api.core.user.UserService
+com/dotd/api/core/user/UserController.java
+ com.dotd.api.core.user.UserController
 com/dotd/api/core/user/User.java
  com.dotd.api.core.user.User
-com/dotd/api/core/product/ProductService.java
- com.dotd.api.core.product.ProductService
 com/dotd/api/core/product/Product.java
  com.dotd.api.core.product.Product
+com/dotd/api/core/product/ProductController.java
+ com.dotd.api.core.product.ProductController

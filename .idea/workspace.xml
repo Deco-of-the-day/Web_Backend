@@ -26,13 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de8c1339-7430-4439-8276-463a5e28a159" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/dotd/api/core/product/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/dotd/api/core/product/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/dotd/api/core/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/dotd/api/core/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/dotd/api/core/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/dotd/api/core/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices/user-service/src/main/java/com/dotd/microservices/core/user/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-service/src/main/java/com/dotd/microservices/core/user/services/UserControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices/user-service/src/test/java/com/dotd/microservices/core/user/UserServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-service/src/test/java/com/dotd/microservices/core/user/UserControllerApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,12 +83,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -185,7 +181,7 @@
       <workItem from="1647267491166" duration="724000" />
       <workItem from="1647367756129" duration="3574000" />
       <workItem from="1649332803621" duration="624000" />
-      <workItem from="1649575880929" duration="1396000" />
+      <workItem from="1649575880929" duration="2911000" />
     </task>
     <servers />
   </component>

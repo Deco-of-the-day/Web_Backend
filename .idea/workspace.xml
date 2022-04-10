@@ -25,7 +25,15 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de8c1339-7430-4439-8276-463a5e28a159" name="Default Changelist" comment="" />
+    <list default="true" id="de8c1339-7430-4439-8276-463a5e28a159" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/dotd/api/core/product/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/dotd/api/core/product/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/dotd/api/core/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/dotd/api/core/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/dotd/api/core/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/dotd/api/core/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user-service/src/main/java/com/dotd/microservices/core/user/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-service/src/main/java/com/dotd/microservices/core/user/services/UserControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user-service/src/test/java/com/dotd/microservices/core/user/UserServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-service/src/test/java/com/dotd/microservices/core/user/UserControllerApplicationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,12 +61,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="dotd_work" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -69,6 +72,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -102,6 +106,17 @@
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RunManager" selected="Spring Boot.UserServiceApplication">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="product-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dotd.microservices.core.productgroupId.com.dotd.microservices.core.productdependencies.actuator.webflux.ProductServiceApplication" />
@@ -168,7 +183,9 @@
       <workItem from="1646563666594" duration="1352000" />
       <workItem from="1647086346584" duration="545000" />
       <workItem from="1647267491166" duration="724000" />
-      <workItem from="1647367756129" duration="2970000" />
+      <workItem from="1647367756129" duration="3574000" />
+      <workItem from="1649332803621" duration="624000" />
+      <workItem from="1649575880929" duration="1396000" />
     </task>
     <servers />
   </component>

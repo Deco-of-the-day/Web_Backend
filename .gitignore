@@ -1,4 +1,3 @@
-
 # Created by https://www.toptal.com/developers/gitignore/api/intellij,gradle,java,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=intellij,gradle,java,windows
 
@@ -133,6 +132,7 @@ fabric.properties
 
 # Package Files #
 *.jar
+!gradle/wrapper/gradle-wrapper.jar
 *.war
 *.nar
 *.ear
@@ -171,7 +171,6 @@ $RECYCLE.BIN/
 *.lnk
 
 ### Gradle ###
-.gradle
 **/build/
 !src/**/build/
 

@@ -1,24 +1,30 @@
 package com.dotd.api.core.user;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+/**
+ * 22.05.04
+ * 사용자 계정을 담는 엔티티
+ *
+ * @author Taxol
+ * @version 1.0
+ */
+@Entity
+@Getter @Setter
 public class User {
-	
-	// example in book
-	//  나중에 수정 필요
-	private final int userId;
-	private final String name;
 
-	public User(){
-		userId = 0;
-		name = null;
-	}
+	@Id @GeneratedValue
+	@Column(name = "user_id")
+	private int userId;
 
-	public User(int userId, String name){
-		this.userId = userId;
-		this.name = name;
-	}
-
-	public int getUserId(){return userId;}
-	public String getName() {return name;}
-
+	private String name;
+	private String password;
 
 }

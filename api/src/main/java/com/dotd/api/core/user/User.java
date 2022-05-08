@@ -1,13 +1,12 @@
 package com.dotd.api.core.user;
 
-import lombok.AllArgsConstructor;
+import com.dotd.api.core.room.Room;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 22.05.04
@@ -22,9 +21,11 @@ public class User {
 
 	@Id @GeneratedValue
 	@Column(name = "user_id")
-	private int userId;
+	private Long id;
 
 	private String name;
 	private String password;
 
+	@OneToMany(mappedBy = "user")
+	private List<Room> rooms = new ArrayList<>();
 }

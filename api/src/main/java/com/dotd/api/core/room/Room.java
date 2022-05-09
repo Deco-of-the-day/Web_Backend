@@ -37,4 +37,7 @@ public class Room {
 
     @OneToMany(mappedBy = "room", cascade = CascadeType.ALL)
     private List<RoomImage> images = new ArrayList<>();
+
+    @OneToMany(mappedBy = "room", cascade = CascadeType.ALL)
+    private List<Reply> replies = new ArrayList<>();
 }

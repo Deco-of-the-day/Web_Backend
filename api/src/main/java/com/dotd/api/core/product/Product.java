@@ -1,6 +1,7 @@
 package com.dotd.api.core.product;
 
 import com.dotd.api.core.room.Room;
+import com.dotd.api.core.user.User;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -33,4 +34,8 @@ public class Product {
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "room_id")
     private Room room;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id")
+    private User user;
 }

@@ -1,5 +1,6 @@
 package com.dotd.api.core.user;
 
+import com.dotd.api.core.product.Product;
 import com.dotd.api.core.room.Room;
 import lombok.Getter;
 import lombok.Setter;
@@ -28,4 +29,7 @@ public class User {
 
 	@OneToMany(mappedBy = "user")
 	private List<Room> rooms = new ArrayList<>();
+
+	@OneToMany(mappedBy = "user")
+	private List<Product> products = new ArrayList<>();
 }

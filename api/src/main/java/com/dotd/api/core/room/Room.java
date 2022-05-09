@@ -34,4 +34,7 @@ public class Room {
 
     @OneToMany(mappedBy = "room")
     private List<Product> products = new ArrayList<>();
+
+    @OneToMany(mappedBy = "room", cascade = CascadeType.ALL)
+    private List<RoomImage> images = new ArrayList<>();
 }

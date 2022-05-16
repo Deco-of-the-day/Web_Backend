@@ -1,5 +1,6 @@
 package com.dotd.api.core.user;
 
+import com.dotd.api.core.chat.ChatSession;
 import com.dotd.api.core.product.Product;
 import com.dotd.api.core.room.Reply;
 import com.dotd.api.core.room.Room;
@@ -36,4 +37,7 @@ public class User {
 
 	@OneToMany(mappedBy = "user")
 	private List<Reply> replies = new ArrayList<>();
+
+	@OneToMany(mappedBy = "user")
+	private List<ChatSession> chatSessions = new ArrayList<>();
 }

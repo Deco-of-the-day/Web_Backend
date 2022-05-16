@@ -1,5 +1,6 @@
 package com.dotd.api.core.product;
 
+import com.dotd.api.core.chat.ChatSession;
 import com.dotd.api.core.room.Room;
 import com.dotd.api.core.user.User;
 import lombok.Getter;
@@ -43,4 +44,7 @@ public class Product {
 
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     private List<ProductImage> images = new ArrayList<>();
+
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    private List<ChatSession> chatSessions = new ArrayList<>();
 }

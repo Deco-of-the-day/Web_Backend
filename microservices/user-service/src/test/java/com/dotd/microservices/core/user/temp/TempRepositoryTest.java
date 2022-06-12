@@ -1,7 +1,8 @@
 package com.dotd.microservices.core.user.temp;
 
-import com.dotd.microservices.core.user.temp.Temp;
-import com.dotd.microservices.core.user.temp.TempRepository;
+import com.dotd.api.core.temp.Temp;
+import com.dotd.api.core.temp.TempRepository;
+import com.dotd.microservices.core.user.repository.TempRepositoryImpl;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -15,14 +16,15 @@ import org.springframework.transaction.annotation.Transactional;
 @SpringBootTest
 class TempRepositoryTest {
 
-    @Autowired  TempRepository tempRepository;
+    @Autowired
+    TempRepository tempRepository;
 
     @Test
     @Transactional
     @Rollback(value = false)
     void save() {
         Temp member = new Temp();
-        member.setName("memberA");
+        member.setName("memberB");
 
         //when
         Long saveId = tempRepository.save(member);        // 생성한 member를 db에 넣는다.

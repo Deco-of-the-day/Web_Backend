@@ -1,4 +1,4 @@
-package com.dotd.microservices.core.user.temp;
+package com.dotd.api.core.temp;
 
 import lombok.Getter;
 import lombok.Setter;

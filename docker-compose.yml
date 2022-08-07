@@ -1,0 +1,19 @@
+version: '2.5.0'
+
+services:
+  user:
+    build: microservices/user-service
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+
+  product:
+    build: microservices/product-service
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+
+  user-composite:
+    build: microservices/user-composite-service
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker

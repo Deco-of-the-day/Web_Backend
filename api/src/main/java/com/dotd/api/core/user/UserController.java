@@ -12,5 +12,4 @@ public interface UserController {
 		produces = "application/json")
 	User getUser(@PathVariable int userId);
 
-
 }

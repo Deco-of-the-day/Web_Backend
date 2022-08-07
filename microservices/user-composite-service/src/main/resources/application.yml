@@ -12,3 +12,16 @@ logging:
   level:
     root: INFO
     com.dotd: DEBUG
+---
+spring:
+  profiles: docker
+server:
+  port: 8080
+
+app:
+  user-service:
+    host: user
+    port: 8080
+  product-service:
+    host: product
+    port: 8080

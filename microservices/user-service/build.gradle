@@ -1,9 +1,3 @@
-plugins {
-	id 'org.springframework.boot' version '2.3.4.RELEASE'
-	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
-	id 'java'
-}
-
 group = 'com.dotd.microservices.core.user'
 version = '1.0.0-SNAPSHOT'
 
@@ -11,33 +5,14 @@ sourceSets {
 	main.java.srcDirs += "build/generated/sources/annotationProcessor/java/main"
 }
 
-repositories {
-	mavenCentral()
-}
-
 dependencies {
 
 	implementation project(':api')
 	implementation project(':util')
 
-	// DB 설정
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'		// spring boot가 알아서 라이브러리 정보를 가져온다.
-	runtimeOnly 'mysql:mysql-connector-java'
+	implementation 'mysql:mysql-connector-java'
 
-	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.6.2'		// javax.validation 패키지
-	implementation 'org.springframework.boot:spring-boot-starter-actuator'
-	implementation 'org.springframework.boot:spring-boot-starter-webflux'
-
-	testImplementation('org.springframework.boot:spring-boot-starter-test') {
-		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
-	}
-	//testImplementation 'io.projectreactor:reactor-test'
-
-	compileOnly 'org.projectlombok:lombok'
-	annotationProcessor 'org.projectlombok:lombok'
-
-}
-
-test {
-	useJUnitPlatform()
+	// Swagger
+	implementation 'io.springfox:springfox-boot-starter:3.0.0'
 }

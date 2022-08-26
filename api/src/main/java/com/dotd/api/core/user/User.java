@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 22.05.04
  * 사용자 계정을 담는 엔티티
  *
  * @author Taxol

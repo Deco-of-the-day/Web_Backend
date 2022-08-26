@@ -1,7 +1,6 @@
 package com.dotd.api.core.product;
 
 /**
- * 22.05.08
  * 제품 타입
  *
  * @author Taxol

@@ -2,6 +2,7 @@ package com.dotd.api.core.user;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 public interface UserController {
 
@@ -10,6 +11,10 @@ public interface UserController {
 	@GetMapping(
 		value = "/user/{userId}",
 		produces = "application/json")
-	User getUser(@PathVariable int userId);
+	User getUser(@PathVariable Long userId);
 
+	@PostMapping(
+			value = "/user",
+			produces = "application/json")
+	Long joinUser(User user);
 }

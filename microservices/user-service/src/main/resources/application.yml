@@ -10,8 +10,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://db-b8co0.pub-cdb.ntruss.com:3306/user?serverTimezone=UTC&characterEncoding=UTF-8
-    username: dotdadmin
-    password: dotdadmin1!
+    username:
+    password:
 
   jpa:
     database: mysql

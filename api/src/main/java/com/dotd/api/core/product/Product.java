@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 22.05.08
  * Room에 등록 된 제품
  *
  * @author Taxol

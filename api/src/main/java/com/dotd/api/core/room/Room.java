@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *  22.05.08
  *  인테리어 방 정보를 담는 엔티티
  *
  * @author Taxol

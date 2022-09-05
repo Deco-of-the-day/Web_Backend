@@ -8,6 +8,7 @@ class UserControllerApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }

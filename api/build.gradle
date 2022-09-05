@@ -2,4 +2,7 @@ group = 'com.dotd.api'
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'		// spring boot가 알아서 라이브러리 정보를 가져온다.
+    implementation project(':')
+    implementation group: 'io.swagger', name: 'swagger-annotations', version: '1.5.20'
+
 }

@@ -2,6 +2,7 @@ package com.dotd.api.core.chat;
 
 import com.dotd.api.core.product.Product;
 import com.dotd.api.core.user.User;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -22,14 +23,14 @@ public class ChatSession {
     private Product product;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "id")
     private User user;
 
     @Enumerated(EnumType.STRING)
     private ChatType type;
 
     @OneToMany(mappedBy = "chatSession", cascade = CascadeType.ALL)
+    @ApiModelProperty(hidden = true)
     private List<ChatMessage> chatMessages = new ArrayList<>();
-
 
 }

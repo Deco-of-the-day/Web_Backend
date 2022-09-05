@@ -28,7 +28,7 @@ public class Room {
     private RoomType type;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "id")
     private User user;
 
     @OneToMany(mappedBy = "room")

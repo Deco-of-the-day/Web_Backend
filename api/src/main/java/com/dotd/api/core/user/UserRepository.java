@@ -1,8 +1,11 @@
 package com.dotd.api.core.user;
 
 import com.dotd.api.core.user.User;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 /**
  * 2022.05.29
@@ -11,10 +14,6 @@ import java.util.List;
  * @author taxol
  * @version 1.0
  */
-public interface UserRepository {
-    void save(User user);
-
-    User findOne(Long id);
-
-    List<User> findByName(String name);
+public interface UserRepository extends JpaRepository<User, UUID> {
+    Optional<User> findByEmail(String email);
 }

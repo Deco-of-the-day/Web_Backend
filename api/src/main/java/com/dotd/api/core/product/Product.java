@@ -38,7 +38,7 @@ public class Product {
     private Room room;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "id")
     private User user;
 
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)

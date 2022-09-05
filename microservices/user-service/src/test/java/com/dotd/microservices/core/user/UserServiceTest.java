@@ -1,6 +1,6 @@
 package com.dotd.microservices.core.user;
 
-import com.dotd.api.core.user.User;
+import com.dotd.api.core.user.UserDto;
 import com.dotd.api.core.user.UserRepository;
 import com.dotd.api.core.user.UserService;
 import org.junit.jupiter.api.Test;
@@ -32,14 +32,14 @@ public class UserServiceTest {
     @Rollback(false)
     public void signUp() throws Exception {
         //given
-        User user = new User();
-        user.setName("taxol");
+        UserDto user = new UserDto();
+        user.setNickname("taxol");
 
         //when
-        Long saveId = userService.join(user);
+        String saveId = userService.join(user);
 
         //then
-        assertEquals(user, userRepository.findOne(saveId));
+        assertEquals(user, userRepository.findByEmail(saveId));
     }
 
 }

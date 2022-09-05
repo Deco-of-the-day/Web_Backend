@@ -6,10 +6,12 @@ import com.dotd.api.core.room.Reply;
 import com.dotd.api.core.room.Room;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 /**
  * 사용자 계정을 담는 엔티티
@@ -21,11 +23,14 @@ import java.util.List;
 @Getter @Setter
 public class User {
 
-	@Id @GeneratedValue
-	@Column(name = "user_id")
-	private Long id;
+	@Id
+	@GeneratedValue(generator = "uuid2")
+	@GenericGenerator(name = "uuid2", strategy = "uuid2")
+	@Column(columnDefinition = "BINARY(16)")
+	private UUID id;
 
-	private String name;
+	private String email;
+	private String nickname;
 	private String password;
 
 	@OneToMany(mappedBy = "user")
@@ -39,4 +44,14 @@ public class User {
 
 	@OneToMany(mappedBy = "user")
 	private List<ChatSession> chatSessions = new ArrayList<>();
+
+	//== 생성 메서드 ==//
+	public static User createUser (String email, String nickname, String password) {
+		User user = new User();
+		user.setEmail(email);
+		user.setNickname(nickname);
+		user.setPassword(password);
+
+		return user;
+	}
 }

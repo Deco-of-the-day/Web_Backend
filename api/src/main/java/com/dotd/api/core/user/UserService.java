@@ -1,11 +1,12 @@
 package com.dotd.api.core.user;
 
+import com.dotd.api.core.user.UserDto;
 import com.dotd.api.core.user.User;
 import org.springframework.transaction.annotation.Transactional;
 
 public interface UserService {
     @Transactional
-    Long join(User user);
+    String join(UserDto user);
 
-    User findOne(Long userId);
+    UserDto findOne(String email);
 }

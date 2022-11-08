@@ -1,4 +1,4 @@
-package com.dotd.microservices.core.productgroupId.com.dotd.microservices.core.productdependencies.actuator.webflux;
+package com.dotd.microservices.core.product;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -10,12 +10,14 @@ spring:
   profiles: docker
 server:
   port: 8080
+---
 
+spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://db-b8co0.pub-cdb.ntruss.com:3306/user?serverTimezone=UTC&characterEncoding=UTF-8
-    username:
-    password:
+    url: jdbc:mysql://localhost:3306/dotd_db?serverTimezone=UTC
+    username: dotd_admin
+    password: Orangemango3434!
 
     jpa:
       database: mysql
@@ -41,3 +43,17 @@ server:
             descriptor:
               sql:
                 BasicBinder: TRACE
+
+---
+## Multipart properties
+# Enable multipart uploads
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 200MB
+      max-request-size: 215MB
+
+# 개발기간 동안 프로젝트 내의 파일을 업로드할 폴더
+file:
+  upload-dir: ./uploads

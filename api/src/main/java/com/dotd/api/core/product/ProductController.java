@@ -1,7 +1,9 @@
 package com.dotd.api.core.product;
 
+import com.dotd.api.core.payload.FileUploadResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 public interface ProductController {
 
@@ -13,6 +15,6 @@ public interface ProductController {
             value = "/product/{productId}",
             consumes = "application/json",
             produces = "application/json")
-    ProductInfoDto sendProduct(@PathVariable int productId, @RequestBody ProductInfoDto productInfoDto);
+    FileUploadResponse sendProduct(@PathVariable int productId, @RequestParam("file") MultipartFile file,  @RequestBody ProductInfoDto productInfoDto);
 
 }

@@ -25,9 +25,6 @@ allprojects {
 
     version = '1.0.0-SNAPSHOT'
 
-    ext{
-        mapstructVersion = "1.5.3.Final"
-    }
     sourceSets {
         main.java.srcDirs += "build/generated/sources/annotationProcessor/java/main"
     }
@@ -50,10 +47,10 @@ allprojects {
         }
 
         // mapstruct
-        implementation 'org.mapstruct:mapstruct:${mapstructVersion}'
-        compileOnly "org.mapstruct:mapstruct-processor:${mapstructVersion}"
-        annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
-        testAnnotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
+        implementation 'org.mapstruct:mapstruct:1.5.3.Final'
+        compileOnly 'org.mapstruct:mapstruct-processor:1.5.3.Final'
+        annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.3.Final'
+        testAnnotationProcessor 'org.mapstruct:mapstruct-processor:1.5.3.Final'
 
         // lombok
         compileOnly 'org.projectlombok:lombok'
